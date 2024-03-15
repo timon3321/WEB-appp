@@ -1,11 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Онлайн книгарня "Ольга"</title>
+    <style>
+        .image-row {
+            display: flex; 
+            justify-content: center; 
+        }
+
+        
+        .image-row img {
+           width: 400px; 
+           height: 300px; 
+           margin-right: 40px;
+}
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 25px 0;
+        }
+        .header-logo {
+    margin-left: 20px;
+    margin-right: 10px; /* Додаємо відступ зправа, щоб відокремити від навігації */
+    width: 400px; /* Задаємо ширину для емблеми */
+    height: 100px;
+        }
+        .header-logo2 {
+            
+            font-size: 40px;
+            font-weight: bold;
+            color: #8d94de;
+            text-decoration: none; 
+            margin-left: 30px;
+        }
+        .header-nav {
+            letter-spacing: 5px;
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 100px;
+        }
+        .header-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center; 
+        }
+        .header-nav ul li {
+            display: inline-block;
+            margin-right: 60px;
+        }
+        .header-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .main-content {
+            padding: 25px;
+        }
+
+        .book-image {
+            width: 120%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    border-radius: 8px; 
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa; 
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer {
+            background-color: #2e2222;
+            color: #e4dcdc;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .footer-column {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+        .footer-column:last-child {
+            margin-right: 0;
+        }
+        .footer-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links li {
+            margin-bottom: 5px;
+        }
+        .footer-contact {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        ol, ul {
+            margin-left: 30px;
+            margin-bottom: 25px; 
+        }
+
+        
+        form {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        input[type="text"] {
+            width: 250px;
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+
+        
+        button[type="submit"] {
+            width: 200px; 
+            padding: 10px; 
+            background-color: #8d94de;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+       
+        button[type="submit"]:hover {
+            background-color: #092d54; 
+        }
+    </style>
 </head>
+
 <body>
-    <h1> IEU </h1>
+    <header>
+        <div class="container">
+            <img src=".vscode\logo.jpg" alt="Емблема" class="header-logo">
+            <nav class="header-nav">
+        <a href="#" class="header-logo2">Онлайн книгарня "Ольга"</a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Акції</a></li>
+                <li><a href="#">Видавництва</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <h1>Ласкаво просимо до магазину!</h1>
+            <h2>Великий вибір книг</h2>
+            <div class="image-row">
+                <img src=".vscode/book.jpg" alt="Зображення 1">
+                <img src=".vscode/tekst-1.png" alt="Зображення 2">
+                <img src=".vscode/Finance-books.jpg" alt="Зображення 3">
+            </div>
+            <table border="1">
+                <tr>
+                    <th>Стилі книжок</th>
+                    <th>Наявність</th>
+                </tr>
+                <tr>
+                    <td>Художній</td>
+                    <td>так</td>
+                </tr>
+                <tr>
+                    <td>Трилери</td>
+                    <td>так</td>
+                </tr>
+                <tr>
+                    <td>Романтика</td>
+                    <td>так</td>
+                </tr>
+                <tr>
+                    <td>Енциклопедії</td>
+                    <td>так</td>
+                </tr>
+            </table>
+            <ol>
+                <li>Індивідуальний підхід до кожного клієнта</li>
+        <li>Великий вибір книг на будь-який смак</li>
+        <li>Безкоштовна доставка по всій Україні</li>
+            </ol>
+            <ul>
+                <li>Проста система бронювання книг</li>
+                <li>Зручна оплата та доставка</li>
+            </ul>
+            <form>
+                <label for="email">Введіть вашу електронну пошту:</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label for="fullName">Введіть ваше ПІБ:</label>
+                <input type="text" id="fullName" name="fullName">
+                <br>
+                <label for="city">Введіть ваше місто:</label>
+                <input type="text" id="city" name="city">
+                <br>
+                <label for="postOffice">Введіть відділення Нової Пошти:</label>
+                <input type="text" id="postOffice" name="postOffice">
+                <br>
+                <button type="submit">Відправити замовлення</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-column">
+            <p class="footer-title">КАТАЛОГ</p>
+            <ul class="footer-links">
+                <li>Каталог</li>
+                <li>Акції</li>
+                <li>Видавництва</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">КОМПАНІЯ</p>
+            <ul class="footer-links">
+                <li>Про компанію</li>
+                <li>Контакти</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">ІНФОРМАЦІЯ</p>
+            <ul class="footer-links">
+                <li>Графік роботи</li>
+                <li>Система лояльності</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">ДОПОМОГА</p>
+            <ul class="footer-links">
+                <li>Умови оплати</li>
+                <li>Умови доставки</li>
+                <li>Повернення та обмін товару</li>
+                <li>Публічна оферта</li>
+                <li>Підписатися на розсилку</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p class="footer-contact">0-800-234-714</p>
+            <p class="footer-contact">info@onlineOLYA.ua</p>
+            <p class="footer-contact">м. Київ, вул Т.Шевченка 62</p>
+        </div>
+    </footer>
 </body>
+
 </html>
+
+
+
